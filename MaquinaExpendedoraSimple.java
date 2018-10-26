@@ -20,7 +20,7 @@ class MaquinaExpendedoraSimple {
         precioBillete = 12;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = "León";
+        estacionOrigen = "Leon";
         estacionDestino = "Madrid";
     }
     
@@ -28,7 +28,7 @@ class MaquinaExpendedoraSimple {
         precioBillete = valorBillete;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = "León";
+        estacionOrigen = "Leon";
         estacionDestino = estacionDestino2;
     }
 
@@ -69,5 +69,9 @@ class MaquinaExpendedoraSimple {
         totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
+    }
+    
+    public int totalDineroAcumulado() {
+        return totalDineroAcumulado;
     }
 }
